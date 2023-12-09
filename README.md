@@ -1,3 +1,7 @@
 # DMDV_2023
-# My first commit to a branch!
-# Jeg ved ikke hvad vi laver idag
+This repository contains all my code for DMDV
+
+The file structure is as follows: 
+
+1. Docker code
+2. Github code 
