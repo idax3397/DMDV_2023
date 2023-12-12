@@ -11,7 +11,6 @@ x # print this object
 x = "Hello" # store a string object
 x
 
-
 # Data types ####
 ?str
 str(43)
@@ -23,7 +22,6 @@ str(log) #its a function
 str("string") #called charector
 str(2i) #complex numbers, you dont really use them
 str(as.raw(255)) #raw, you dont really use them
-
 
 
 # Vectors ####
@@ -49,7 +47,6 @@ mean(Height) # Compute the sample mean
 var(Height)
 
 
-
 # Matrices ####
 
 M = cbind(obs,Height,Weight,BMI) # Create a matrix
@@ -66,7 +63,6 @@ dim(M) # Dimensions of a matrix
 plot(Height,Weight,ylab="Weight",xlab="Height")
 
 
-
 # Dataframes ####
 mydat <- as.data.frame(M)
 names(mydat) # Give the names of each variable
@@ -77,7 +73,6 @@ min(mydat$Height)
 # Read and Write data
 write.csv(mydat, "my_data.csv", row.names = FALSE)
 mydat2=read.csv("my_data.csv")
-
 
 # Special characters in R ####
 
