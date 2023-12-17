@@ -13,9 +13,11 @@ req <- request("http://165.22.92.178:8080") %>%
   req_url_path("fib") %>%
   req_url_query(n = 7) %>%
   req_headers(authorization = "DM_DV_123#!")
+req # Inspect request object
 req %>% req_dry_run() 
-resp <- req %>% 
+resp <- req %>%  # Send the request to the API
   req_perform()
+resp #inspect the response format
 resp %>%
   resp_body_string()
 # GET with parameters and header API key -----------------------------------------
